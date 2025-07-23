@@ -1,4 +1,4 @@
-# CervantesEsquizonfrenico, DNS Recon & Silent Scan Tool
+# CervantesEsquizofrenico, DNS Recon & Silent Scan Tool
 
 ## Description
 
