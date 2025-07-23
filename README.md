@@ -39,10 +39,13 @@ chmod +x cervantesesquizofrenico.pl
 ```
 
 ## Usage
+```bash
 ./cervantesesquizofrenico.pl <domain>
-
+```
 ### Example:
+```bash
 ./cervantesesquizofrenico.pl example.com
+```
 The script will display DNS records, run a silent nmap scan on discovered IPs, attempt WAF detection,
 and extract metadata with MetaFinder saving results to a file.
 
