@@ -37,7 +37,7 @@ metafinder: follow official installation instructions
 
 4. Make the script executable:
 ```bash
-chmod +x dns_recon.pl
+chmod +x cervantesesquizofrenico.pl
 ```
 
 ## Usage
