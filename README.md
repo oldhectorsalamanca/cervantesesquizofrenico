@@ -6,8 +6,6 @@ This Perl tool performs a comprehensive DNS reconnaissance on a given domain, ex
 Additionally, it runs discreet and fast **nmap** scans on the discovered IPs, detects Web Application Firewalls (WAFs) using **WafW00f**,  
 and finally extracts metadata with **MetaFinder** for additional domain intelligence.
 
-The output is color-coded for better readability but can be disabled with a command-line option.
-
 ---
 
 ## Requirements
@@ -41,21 +39,10 @@ chmod +x cervantesesquizofrenico.pl
 ```
 
 ## Usage
-./cervantesesquizofrenico.pl [options] <domain>
-
-### Options:
---dnsserver <IP>: Use this DNS server for queries
-
---timeout <seconds>: Set DNS timeout (default is 10)
-
---nocolor: Disable colored output
-
---verbose: Show verbose error messages
-
--h, --help: Show usage help
+./cervantesesquizofrenico.pl <domain>
 
 ### Example:
-./cervantesesquizofrenico.pl --dnsserver 8.8.8.8 --verbose example.com
+./cervantesesquizofrenico.pl example.com
 The script will display DNS records, run a silent nmap scan on discovered IPs, attempt WAF detection,
 and extract metadata with MetaFinder saving results to a file.
 
