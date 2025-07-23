@@ -15,7 +15,7 @@ The output is color-coded for better readability but can be disabled with a comm
 - Perl (with modules: Net::DNS, Getopt::Long, Term::ANSIColor)  
 - nmap installed and available in your PATH  
 - wafw00f installed (`pip install wafw00f`)  
-- metafinder installed (see https://github.com/hiddenillusion/metafinder)  
+- metafinder installed (see [https://github.com/hiddenillusion/metafinder](https://github.com/Josue87/MetaFinder))  
 
 ---
 
