@@ -2,7 +2,7 @@
 
 ## Description
 
-This Perl tool performs a comprehensive DNS reconnaissance on a given domain, extracting A, NS, and MX records.  
+This Perl tool performs a comprehensive DNS reconnaissance on a given domain, extracting A, NS, and MX records (using part of **Dnsenum's** code).  
 Additionally, it runs discreet and fast **nmap** scans on the discovered IPs, detects Web Application Firewalls (WAFs) using **WafW00f** in a non-intrusive mode,  
 and finally extracts metadata with **MetaFinder** for additional domain intelligence.
 
