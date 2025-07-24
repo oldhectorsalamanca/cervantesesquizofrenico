@@ -39,6 +39,7 @@ chmod +x cervantesesquizofrenico.pl
 ```
 
 ## Usage
+Dont forget to be in a virtual env if needed. Ohterwise metafinder will not work.
 ```bash
 ./cervantesesquizofrenico.pl <domain>
 ```
@@ -52,7 +53,8 @@ and extract metadata with MetaFinder saving results to a file.
 ## Notes
 Nmap scan uses -T2 option to be fast and stealthy to avoid detection alerts.
 
-WafW00f do not tries to bypass WAFs but can create alerts while making detections.
+WafW00f do not tries to bypass WAFs but can create alerts while making detections. 
+Becuase of that WafW00f code is by default commented,feel free to uncomment. 
 
 MetaFinder may take a few seconds while querying search engines like Bing and Google.
 
