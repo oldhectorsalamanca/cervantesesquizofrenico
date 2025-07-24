@@ -126,7 +126,7 @@ foreach my $ip (@results) {
     unless ($nocolor) { print color 'reset'; }
 
     # Build and run the nmap command
-    my $nmap_cmd = "nmap -T2 -sS --top-ports 20 -Pn $ip";
+    my $nmap_cmd = "nmap -T2 -sS --top-ports 10 -Pn $ip";
     my @output = `$nmap_cmd`;
 
     foreach my $line (@output) {
@@ -138,8 +138,9 @@ foreach my $ip (@results) {
 
 # Run WafW00f in non-intrusive detection mode (-t 3) for http and https
 unless ($nocolor) { print color 'bold green'; }
-print("\n~ 'Silent' WAF Detection ~\n");
+print("\n~ 'Silent' WAF Detection ~ SKIPPED TO PREVENT DETECTION (remove '=pod' and '=cut' to uncomment)\n");
 
+=pod
 foreach my $proto ('http', 'https') {
     my $target = "$proto://$domain";
     unless ($nocolor) { print color 'bold white'; }
@@ -159,6 +160,7 @@ foreach my $proto ('http', 'https') {
     }
     print "No WAF detected or not enough evidence.\n" unless $found;
 }
+=cut
 
 # --- Metadata extraction with MetaFinder ---
 unless ($nocolor) { print color 'bold green'; }
@@ -201,7 +203,7 @@ sub printheader {
 
 sub usage {
     print <<"USAGE";
-Usage: $0 <domain>
+Usage: $0 [options] <domain>
 USAGE
     exit(1);
 }
